@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MoMo.TopUp.TopUp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="40dp"
+        android:contentDescription="Logo"
+        app:srcCompat="@mipmap/ic_launcher_round" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:outlineSpotShadowColor="@color/white"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/top_up"
+            android:textColor="@color/colorPrimary"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/MoMoSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/circle"
+            android:text="@string/mobile_money"
+            android:textAlignment="center" />
+
+
+        <Spinner
+            android:id="@+id/BankSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/circle"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/TUCback"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/circle"
+            android:text="@string/back"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+
+</LinearLayout>

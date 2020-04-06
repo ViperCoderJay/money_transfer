@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user.EnterDetails">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:id="@+id/GetDetails">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Details"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:textSize="40sp"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"/>
+
+        <EditText
+            android:id="@+id/FName"
+            android:inputType="text"
+            android:hint="First Name"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textColorHint="@color/text"
+            android:textColorHighlight="#1B1B1B"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:background="@drawable/input"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/LName"
+            android:inputType="text"
+            android:hint="Last Name"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textColorHint="@color/text"
+            android:textColorHighlight="#1B1B1B"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:background="@drawable/input"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/Email"
+            android:inputType="textEmailAddress"
+            android:hint="Email"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textColorHint="@color/text"
+            android:textColorHighlight="#1B1B1B"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:background="@drawable/input"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/Password"
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textColorHint="@color/text"
+            android:textColorHighlight="#1B1B1B"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:background="@drawable/input"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/CPassword"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textColorHint="@color/text"
+            android:textColorHighlight="#1B1B1B"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:background="@drawable/input"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_gravity="center"
+            android:text="Save"
+            android:layout_marginTop="35dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            />
+
+    </LinearLayout>
+</LinearLayout>

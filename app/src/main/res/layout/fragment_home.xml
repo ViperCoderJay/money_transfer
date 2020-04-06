@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/HRelV1"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/circle"
+        android:outlineAmbientShadowColor="@color/black"
+        android:padding="20dp">
+
+        <RelativeLayout
+            android:id="@+id/HRelVContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:id="@+id/HRelVBalance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:id="@+id/K"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:elegantTextHeight="true"
+                    android:textColor="@color/white"
+                    android:textSize="40sp" />
+
+                <TextView
+                    android:id="@+id/TVHomeBalance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="7dp"
+                    android:layout_toRightOf="@+id/K"
+                    android:elegantTextHeight="true"
+                    android:textColor="@color/white"
+                    android:textSize="40sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/HRelVBalance"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:elegantTextHeight="true"
+                    android:text="account balannce"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/HRelV2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/HRelV1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/Hi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elegantTextHeight="true"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/TVUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_toRightOf="@+id/Hi"
+            android:elegantTextHeight="true"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/HRelV3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/HRelV2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp">
+
+        <RelativeLayout
+            android:id="@+id/HRelVAddMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/IBAddMoney"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/circle"
+                android:src="@drawable/ic_add_circle_outline_black_24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/IBAddMoney"
+                android:layout_centerHorizontal="true"
+                android:text="@string/top_up"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/HRelVTransfer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/HRelVAddMoney">
+
+            <ImageButton
+                android:id="@+id/IBTransfer"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/circle"
+                android:src="@drawable/ic_shuffle_black_24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/IBTransfer"
+                android:layout_centerHorizontal="true"
+                android:text="@string/transfer"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/HRelVExchange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/HRelVTransfer">
+
+            <ImageButton
+                android:id="@+id/IBExchange"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/circle"
+                android:src="@drawable/ic_import_export_black_24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/IBExchange"
+                android:layout_centerHorizontal="true"
+                android:text="@string/exchange"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/HRelVRequest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/HRelVExchange">
+
+            <ImageButton
+                android:id="@+id/IBRequest"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/circle"
+                android:src="@drawable/ic_touch_app_black_24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/IBRequest"
+                android:layout_centerHorizontal="true"
+                android:text="@string/request"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/HRelV4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/HRelV3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
+
+        <RelativeLayout
+            android:id="@+id/HRelVnotification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/IBPay"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/circle"
+                android:src="@drawable/ic_shopping_cart_black_24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/IBPay"
+                android:layout_centerHorizontal="true"
+                android:text="@string/pay"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/HRelVhistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/HRelVnotification">
+
+            <ImageButton
+                android:id="@+id/IBSearch"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/circle"
+                android:src="@drawable/ic_search_black_24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/IBSearch"
+                android:layout_centerHorizontal="true"
+                android:text="@string/search"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/HRelVdashboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/HRelVhistory">
+
+            <ImageButton
+                android:id="@+id/IBnotications"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/circle"
+                android:src="@drawable/ic_notifications_none_black_24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/IBnotications"
+                android:layout_centerHorizontal="true"
+                android:text="@string/notification"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/HRelVcurrency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/HRelVdashboard">
+
+            <ImageButton
+                android:id="@+id/IBmore"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/circle"
+                android:src="@drawable/ic_dehaze_black_24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/IBmore"
+                android:layout_centerHorizontal="true"
+                android:text="@string/more"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
